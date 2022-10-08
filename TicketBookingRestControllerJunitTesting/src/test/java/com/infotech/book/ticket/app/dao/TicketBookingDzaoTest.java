@@ -1,6 +1,6 @@
 package com.infotech.book.ticket.app.dao;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertThat;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,7 +17,7 @@ import com.infotech.book.ticket.app.entities.Ticket;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
-public class TicketBookingDaoTest {
+public class TicketBookingDzaoTest {
 
 	@Autowired
 	private TestEntityManager entityManager;

@@ -5,5 +5,10 @@ import org.springframework.data.repository.CrudRepository;
 import com.infotech.book.ticket.app.entities.Ticket;
 
 public interface TicketBookingDao extends CrudRepository<Ticket, Integer>{
+	
 	Ticket findByEmail(String email);
+
+	Ticket findOne(Integer ticketId);
+
+	void delete(Integer ticketId);
 }
